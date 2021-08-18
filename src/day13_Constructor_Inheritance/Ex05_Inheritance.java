@@ -1,12 +1,18 @@
 package day13_Constructor_Inheritance;
 
 class Calc01 {								//부모 클래스
+	public Calc01() {
+		System.out.println("calc 부모 생성자");
+	}
 	public void display() {
 		System.out.println("계산기 생성");
 	}
 }
 
 class Computer01 extends Calc01 {			//자식 클래스
+	public Computer01() {
+		System.out.println("com 자식 생성자");
+	}
 	public void print() {
 		System.out.println("컴퓨터 생성");
 	}
